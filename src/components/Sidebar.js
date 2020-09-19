@@ -18,7 +18,7 @@ export default function Sidebar(props) {
   return (
     <div>
       <React.Fragment>
-        {props.show && <Backdrop onClick={props.onCancel} />}
+        {props.show}
         <SwipeableDrawer
           anchor={anchor}
           open={state[anchor]}

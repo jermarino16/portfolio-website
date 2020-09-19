@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   container: {
-    backgroundColor: "#753eaa",
+    backgroundColor: "#bb0fae",
     padding: "1rem",
     height: "10rem",
   },
@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function About() {
+export default function Contact() {
   const classes = useStyles();
 
   return (
@@ -26,10 +26,10 @@ export default function About() {
       <div className={classes.root}>
         <Grid container className={classes.container} spacing={24}>
           <Grid item xs={12}>
-            About Me
+            Hit me up :)
           </Grid>
           <Grid item xs={12}>
-            I'm Pretty cool
+            Ill contact you back
           </Grid>
         </Grid>
       </div>
