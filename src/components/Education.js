@@ -24,7 +24,7 @@ export default function Education() {
   return (
     <React.Fragment>
       <div className={classes.root}>
-        <Grid container className={classes.container} spacing={24}>
+        <Grid container className={classes.container}>
           <Grid item xs={12}>
             My Education
           </Grid>

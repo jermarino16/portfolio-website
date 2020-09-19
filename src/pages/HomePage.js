@@ -5,10 +5,13 @@ import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 
 //My Components
+import Profile from "../components/Profile";
 import Header from "../components/Header";
 import About from "../components/About";
 import Education from "../components/Education";
+import Projects from "../components/Projects";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -28,9 +31,12 @@ export default function HomePage(props) {
 
   return (
     <div className={classes.root}>
-      <Grid container spacing={24}>
+      <Grid container>
         <Grid item xs={12}>
           <Header />
+        </Grid>
+        <Grid item xs={12}>
+          <Profile />
         </Grid>
         <Grid item xs={12}>
           <About />
@@ -39,7 +45,13 @@ export default function HomePage(props) {
           <Education />
         </Grid>
         <Grid item xs={12}>
+          <Projects />
+        </Grid>
+        <Grid item xs={12}>
           <Contact />
+        </Grid>
+        <Grid item xs={12}>
+          <Footer />
         </Grid>
       </Grid>
     </div>

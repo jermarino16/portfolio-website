@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   container: {
-    backgroundColor: "#bb0fae",
+    backgroundColor: "#abc123",
     padding: "1rem",
     height: "10rem",
   },
@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Contact() {
+export default function Footer() {
   const classes = useStyles();
 
   return (
@@ -26,10 +26,10 @@ export default function Contact() {
       <div className={classes.root}>
         <Grid container className={classes.container}>
           <Grid item xs={12}>
-            Hit me up :)
+            Im the footer
           </Grid>
           <Grid item xs={12}>
-            Ill contact you back
+            I have nice links here
           </Grid>
         </Grid>
       </div>
