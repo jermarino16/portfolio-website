@@ -8,6 +8,9 @@ import Typography from "@material-ui/core/Typography";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 
+//My Components
+import Sidebar from "./Sidebar";
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -24,22 +27,28 @@ export default function Header() {
 
   const openSidebarHandler = () => setShowSideBar(true);
   const closeSidebarHandler = () => setShowSideBar(false);
+  const testFunction = () => {
+    alert("yoyoyo im clicked");
+  };
 
   return (
-    <AppBar position='static'>
-      <Toolbar>
-        <Typography variant='h6' className={classes.title}>
-          Jeremy Marino
-        </Typography>
-        <IconButton
-          edge='start'
-          color='inherit'
-          aria-label='menu'
-          onClick={openSidebarHandler}
-        >
-          <MenuIcon />
-        </IconButton>
-      </Toolbar>
-    </AppBar>
+    <>
+      <Sidebar show={true} />
+      <AppBar position='static'>
+        <Toolbar>
+          <Typography variant='h6' className={classes.title}>
+            Jeremy Marino
+          </Typography>
+          <IconButton
+            edge='start'
+            color='inherit'
+            aria-label='menu'
+            onClick={testFunction}
+          >
+            <MenuIcon />
+          </IconButton>
+        </Toolbar>
+      </AppBar>
+    </>
   );
 }
