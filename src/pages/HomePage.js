@@ -5,9 +5,9 @@ import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 
 //My Components
-import Profile from "../components/Profile";
 import Header from "../components/Header";
-import About from "../components/About";
+import Profile from "../components/Profile";
+import Skills from "../components/Skills";
 import Education from "../components/Education";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
@@ -39,7 +39,7 @@ export default function HomePage(props) {
           <Profile />
         </Grid>
         <Grid item xs={12}>
-          <About />
+          <Skills />
         </Grid>
         <Grid item xs={12}>
           <Education />
