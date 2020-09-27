@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 
 //MUI
 import { makeStyles } from "@material-ui/core/styles";
-import SwipeableDrawer from "@material-ui/core/SwipeableDrawer";
+import IconButton from "@material-ui/core/IconButton";
+import MenuIcon from "@material-ui/icons/Menu";
+import Drawer from "@material-ui/core/Drawer";
 
 const useStyles = makeStyles({
   container: {
@@ -16,20 +18,26 @@ const useStyles = makeStyles({
 
 export default function SideDrawer(props) {
   const classes = useStyles();
+  const [showSideDrawer, setShowSideDrawer] = useState(false);
+
+  const toggleSideDrawer = () => setShowSideDrawer(!showSideDrawer);
+
+  // const closeSideDrawer = () => setShowSideDrawer(false);
 
   return (
     <div>
       <React.Fragment>
-        {
-          <SwipeableDrawer
-            // className={classes.container}
-            anchor={"right"}
-            open={props.show}
-            // onClose={toggleDrawer(anchor, false)}
-            // onOpen={toggleDrawer(anchor, true)}
-            onClick={props.onClick}
-          ></SwipeableDrawer>
-        }
+        <IconButton
+          edge='start'
+          color='inherit'
+          aria-label='menu'
+          onClick={toggleSideDrawer}
+        >
+          <MenuIcon />
+        </IconButton>
+        <Drawer anchor={"right"} open={showSideDrawer}>
+          I'm the drawer with all of the info
+        </Drawer>
       </React.Fragment>
     </div>
   );
