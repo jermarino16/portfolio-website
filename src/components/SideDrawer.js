@@ -35,7 +35,11 @@ export default function SideDrawer(props) {
         >
           <MenuIcon />
         </IconButton>
-        <Drawer anchor={"right"} open={showSideDrawer}>
+        <Drawer
+          anchor={"right"}
+          open={showSideDrawer}
+          onClose={toggleSideDrawer}
+        >
           I'm the drawer with all of the info
         </Drawer>
       </React.Fragment>
