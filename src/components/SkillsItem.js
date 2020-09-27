@@ -4,16 +4,12 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Paper, Typography, Box } from "@material-ui/core";
 
-export default function SkillsItem() {
+export default function SkillsItem(props) {
   return (
     <>
       <Box component='div' display='inline'>
-        <Typography>
-          Hi there im just a asasdgdasgas i think thats workingHi there im just
-          a asasdgdasgas i think thats workingHi there im just a asasdgdasgas i
-          think thats workingHi there im just a asasdgdasgas i think thats
-          workingHi there im just a asasdgdasgas i think thats working
-        </Typography>
+        <Typography variant='h3'>{props.title}</Typography>
+        <Typography variant='p1'>{props.content}</Typography>
       </Box>
     </>
   );
