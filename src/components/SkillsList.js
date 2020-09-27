@@ -4,7 +4,8 @@ import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import IconButton from "@material-ui/core/IconButton";
-import MenuIcon from "@material-ui/icons/Menu";
+import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
+import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 
 //My Components
 import SkillsItem from "./SkillsItem";
@@ -50,7 +51,7 @@ export default function About() {
               aria-label='menu'
               onClick={decrementState}
             >
-              <MenuIcon />
+              <ArrowBackIosIcon />
             </IconButton>
           </Grid>
           <Grid item xs={8}>
@@ -74,7 +75,7 @@ export default function About() {
               aria-label='menu'
               onClick={incrementState}
             >
-              <MenuIcon />
+              <ArrowForwardIosIcon />
             </IconButton>
           </Grid>
         </Grid>
