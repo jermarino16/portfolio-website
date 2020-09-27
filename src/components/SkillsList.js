@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 
 //MUI
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
+
+//My Components
+import SkillsItem from "./SkillsItem";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -11,10 +14,6 @@ const useStyles = makeStyles((theme) => ({
   container: {
     backgroundColor: "#753eaa",
     padding: "1rem",
-    height: "10rem",
-  },
-  title: {
-    flexGrow: 1,
   },
 }));
 
@@ -25,11 +24,23 @@ export default function About() {
     <React.Fragment>
       <div className={classes.root}>
         <Grid container className={classes.container}>
-          <Grid item xs={12}>
-            Skills I use
+          <Grid item xs={2}>
+            hello
           </Grid>
-          <Grid item xs={12}>
-            I like these ones
+          <Grid item xs={8}>
+            <SkillsItem />
+          </Grid>
+          <Grid item xs={2}>
+            hello
+          </Grid>
+          <Grid item xs={2}>
+            hello
+          </Grid>
+          <Grid item xs={8}>
+            <SkillsItem />
+          </Grid>
+          <Grid item xs={2}>
+            hello
           </Grid>
         </Grid>
       </div>

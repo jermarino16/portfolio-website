@@ -7,7 +7,7 @@ import Grid from "@material-ui/core/Grid";
 //My Components
 import Header from "../components/Header";
 import Profile from "../components/Profile";
-import Skills from "../components/Skills";
+import SkillsList from "../components/SkillsList";
 import Education from "../components/Education";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
@@ -39,7 +39,7 @@ export default function HomePage(props) {
           <Profile />
         </Grid>
         <Grid item xs={12}>
-          <Skills />
+          <SkillsList />
         </Grid>
         <Grid item xs={12}>
           <Education />
